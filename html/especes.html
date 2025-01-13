@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espèces de Renards</title>
+    <link rel="stylesheet" href="../css/especes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="especes.html">Espèces</a>
+            <a href="nature.html">Nature</a>
+            <a href="mythologie.html">Mythologie</a>
+            <a href="pop.html">Culture Pop</a>
+            <a href="rh.html">Relations humaines</a>
+            <a href="menaces.html">Menaces</a>
+            <a href="anecdotes.html">Anecdotes</a>
+            <a href="art.html">Art</a>
+            <a href="impacts.html">Impacts</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="card" ALIGN="left">
+            <img src="../images/Renard_Roux_300x200.jpg" alt="Renard Roux">
+            <h2 ALIGN="center">Renard Roux</h2>
+            <p>Le renard roux est l'espèce la plus commune, reconnaissable à son pelage rouge vif et sa queue touffue.</p>
+            <p><b> Habitat :</b> Présent dans l'hémisphère nord, y compris l'Europe, l'Asie, et l'Amérique du Nord. Il a également été introduit en Australie</p>
+            <p><b> Taille :</b> 90 à 112 cm (avec la queue)</p>
+            <p><b>Caractéristiques :</b> Pelage roux avec une queue touffue et une pointe blanche. Adapté à des environnements variés, des forêts aux zones urbaines.</p>
+        </div>
+
+        <div class="card">
+            <img src="../images/Renard_Polaire_300x200.jpg" alt="Renard Polaire">
+            <h2 ALIGN="center">Renard Polaire</h2>
+            <p>Adapté au froid extrême, le renard polaire change de couleur entre l'été et l'hiver.</p>
+            <p><b> Habitat :</b> Régions arctiques comme le Canada, la Russie et le Groenland</p>
+            <p><b> Taille :</b> Plus petit que le renard roux, environ 75 à 85 cm</p>
+            <p><b>Caractéristiques :</b> Pelage épais et blanc en hiver pour se camoufler dans la neige, devenant brun ou gris en été</p>
+        </div>
+
+        <div class="card">
+            <img src="../images/Fennec_300x200.jpg" alt="Fennec">
+            <h2 ALIGN="center">Fennec</h2>
+            <p>Ce petit renard du désert est célèbre pour ses grandes oreilles et sa capacité à survivre sans eau.</p>
+            <p><b> Habitat :</b> Déserts d'Afrique du Nord, comme le Sahara</p>
+            <p><b> Taille :</b> Le plus petit des renards, environ 40 cm (sans la queue)</p>
+            <p><b>Caractéristiques :</b> Grandes oreilles qui aident à dissiper la chaleur et pelage beige qui reflète le soleil</p>
+        </div>
+
+        <div class="card">
+            <img src="../images/Corsac_300x200.jpg" alt="Renard Corsac">
+            <h2 ALIGN="center">Renard Corsac</h2>
+            <p>Originaire des steppes asiatiques, le renard corsac a un pelage gris pâle et une nature sociale.</p>
+            <p><b> Habitat :</b> Steppes et plaines d’Asie centrale</p>
+            <p><b> Taille :</b> Moyenne, similaire au renard roux</p>
+            <p><b>Caractéristiques :</b> Pelage grisâtre et clair, adapté à un climat aride</p>
+        </div>
+
+        <div class="card">
+            <img src="../images/Gris_300x200.jpg" alt="Renard Gris">
+            <h2 ALIGN="center">Renard Gris</h2>
+            <p>Unique parmi les renards, le renard gris peut grimper aux arbres grâce à ses griffes semi-rétractiles.</p>
+            <p><b> Habitat :</b> Principalement en Amérique du Nord</p>
+            <p><b> Taille :</b> 60 cm (Adulte)</p>
+            <p><b>Caractéristiques :</b> Pelage noir argenté, résultat d'une variation génétique</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Le Monde des Renards. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>

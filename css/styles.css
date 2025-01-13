@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF5E1;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour plus de lisibilité */
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9100d8; 
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu pour Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hamburger div {
+    background-color: white;
+    height: 3px;
+    margin: 4px 0;
+    width: 25px;
+}
+
+.navbar.responsive {
+    display: none; /* Cache les liens par défaut */
+    flex-direction: column; /* Empile les liens verticalement */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar.responsive a {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.menu-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    overflow: hidden; /* Empêche les débordements */
+}
+
+.menu-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre l'image */
+    width: 100%; /* L'image occupe toute la largeur */
+    height: 100%; /* L'image occupe toute la hauteur */
+    object-fit: cover; /* Garde les proportions de l'image en recouvrant tout l'écran */
+    z-index: -1; /* Place l'image derrière le texte */
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%; /* Réduit la largeur pour un meilleur rendu sur mobile */
+    text-shadow: 
+                -1px -1px 0 black, /* Ombre en haut à gauche */
+                1px -1px 0 black,  /* Ombre en haut à droite */
+                -1px 1px 0 black,  /* Ombre en bas à gauche */
+                1px 1px 0 black;   /* Ombre en bas à droite */
+}
+
+.text-overlay h1 {
+    font-size: 3rem; /* Ajuste la taille du texte */
+    margin: 0 0 20px;
+    font-family: "Comfortaa", serif;
+}
+
+.text-overlay p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer {
+    position: absolute; /* Place le footer au-dessus de l'image */
+    bottom: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    text-align: center;
+    color: white; /* Texte blanc pour contraster avec l'image */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
+    padding: 10px 0;
+    z-index: 100; /* Assure qu'il reste visible au-dessus de l'image */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute; /* Superpose la navbar sur l'image */
+        top: 0;
+        left: 0;
+        width: 100%; /* S'étend sur toute la largeur */
+        background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour plus de lisibilité */
+        display: none; 
+        flex-direction: column; /* Les liens s'empilent verticalement */
+        align-items: center;
+        z-index: 100; /* Assure que la navbar reste au-dessus de l'image */
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Espacement vertical entre les liens */
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: flex; /* Affiche le menu hamburger sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 200; /* Toujours au-dessus de la navbar */
+    }
+
+    .hamburger div {
+        background-color: black;
+        height: 3px;
+        margin: 5px 0;
+        width: 25px;
+    }
+
+    .navbar.responsive {
+        display: flex; /* Affiche la navbar lorsqu'elle est activée */
+    }
+
+    .footer {
+        font-size: 12px; /* Réduit la taille du texte pour petits écrans */
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        width: 90%; /* Réduit encore la largeur pour s'adapter à de très petits écrans */
+    }
+
+    .text-overlay h1 {
+        font-size: 1.5rem; /* Réduit davantage la taille des titres */
+    }
+
+    .text-overlay p {
+        font-size: 0.8rem; /* Réduit encore la taille du texte */
+    }
+}

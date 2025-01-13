@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Monde des Renards</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="html/especes.html">Espèces</a>
+            <a href="html/nature.html">Nature</a>
+            <a href="html/mythologie.html">Mythologie</a>
+            <a href="html/pop.html">Culture Pop</a>
+            <a href="html/rh.html">Relations humaines</a>
+            <a href="html/menaces.html">Menaces</a>
+            <a href="html/anecdotes.html">Anecdotes</a>
+            <a href="html/art.html">Art</a>
+            <a href="html/impacts.html">Impact</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <img src="images/BIOS-1209213.jpg" alt="Image de renard">
+        <div class="text-overlay">
+            <h1>Le Monde des Renards</h1>
+            <p>Découvrez ces créatures à la fois mystérieuses et captivantes, symboles de ruse et de beauté à travers les âges. Que ce soit dans les mythes, les jeux vidéo, ou la nature, les renards continuent de nous émerveiller par leur intelligence et leur élégance. Parcourez nos pages pour explorer leur histoire, leur place dans les légendes et leur impact dans la culture moderne. Bonne découverte !</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Renards du Monde. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>

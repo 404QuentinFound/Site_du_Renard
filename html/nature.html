@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renards et Nature</title>
+    <link rel="stylesheet" href="../css/same_styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="especes.html">Espèces</a>
+            <a href="nature.html">Nature</a>
+            <a href="mythologie.html">Mythologie</a>
+            <a href="pop.html">Culture Pop</a>
+            <a href="rh.html">Relations humaines</a>
+            <a href="menaces.html">Menaces</a>
+            <a href="anecdotes.html">Anecdotes</a>
+            <a href="art.html">Art</a>
+            <a href="impacts.html">Impacts</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>Les renards sont parmi les mammifères les plus adaptables de la planète. Avec leurs queues touffues et leur intelligence rusée, ils ont trouvé des moyens de prospérer dans une variété d'habitats, qu'il s'agisse de forêts denses, de déserts arides ou même de zones urbaines.</p>
+
+        <h2>Les habitats naturels</h2>
+        <p>On retrouve les renards dans presque tous les coins du globe. Ils sont aussi à l’aise dans les toundras gelées de l'Arctique que dans les dunes chaudes du Sahara. Chaque espèce a développé des adaptations uniques pour survivre dans son environnement spécifique.</p>
+
+        <h2>Comportement et alimentation</h2>
+        <p>Les renards sont principalement nocturnes, profitant de la pénombre pour chasser. Leur régime alimentaire est opportuniste : ils mangent ce qu'ils trouvent, qu'il s'agisse de petits rongeurs, d'insectes, de fruits ou même de restes d'humains dans les villes. Cette capacité à manger de tout les rend extrêmement résilients.</p>
+
+        <h2>Le rôle écologique</h2>
+        <p>En tant que prédateurs, les renards jouent un rôle crucial dans le contrôle des populations de rongeurs et d'insectes. Cela aide à maintenir un équilibre dans les écosystèmes. Cependant, leur impact peut parfois être controversé dans les régions où ils sont considérés comme nuisibles.</p>
+
+        <h2>Menaces et conservation</h2>
+        <p>Malgré leur adaptabilité, les renards ne sont pas à l'abri des dangers. La destruction de leur habitat, la chasse et les maladies telles que la rage constituent des menaces majeures. Heureusement, des efforts de conservation existent pour protéger ces animaux fascinants.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Renards du Monde. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>

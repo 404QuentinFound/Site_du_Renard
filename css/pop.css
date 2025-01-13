@@ -1,0 +1,150 @@
+body {
+    font-family: "Comfortaa", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5E1;
+    color: #333;
+    line-height: 1.8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: #D2691E; /* Roux de la fourrure */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9100d8;
+    transform: scale(1.1);
+}
+
+.content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.content section:last-child {
+    border-bottom: none;
+}
+
+.content h2 {
+    color: #d2691e; /* Couleur vivante pour les titres */
+    margin-top: 1rem;
+    font-family: "Comfortaa", serif;
+}
+
+.content p {
+    margin: 1rem 0;
+    text-align: justify;
+    font-family: "Comfortaa", serif;
+}
+
+.content img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.images-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.images-group img {
+    flex: 1 1 calc(33.333% - 1rem); /* Trois images par ligne avec un écart */
+    max-width: calc(33.333% - 1rem);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.images-group img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+    background-color: #D2691E;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute; /* Superpose la navbar sur l'image */
+        top: 0;
+        left: 0;
+        width: 100%; /* S'étend sur toute la largeur */
+        background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour plus de lisibilité */
+        display: none; /* Masquée par défaut, activée par le menu hamburger */
+        flex-direction: column; /* Les liens s'empilent verticalement */
+        align-items: center;
+        z-index: 100; /* Assure que la navbar reste au-dessus de l'image */
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Espacement vertical entre les liens */
+        color: white; /* Texte blanc pour un bon contraste */
+        font-size: 16px; /* Taille légèrement plus grande pour la lisibilité */
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: flex; /* Affiche le menu hamburger sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 200; /* Toujours au-dessus de la navbar */
+    }
+
+    .hamburger div {
+        background-color: black;
+        height: 3px;
+        margin: 5px 0;
+        width: 25px;
+    }
+
+    .navbar.responsive {
+        display: flex; /* Affiche la navbar lorsqu'elle est activée */
+    }
+
+    .footer {
+        font-size: 12px; /* Réduit la taille du texte pour petits écrans */
+        padding: 8px 0;
+    }
+}
